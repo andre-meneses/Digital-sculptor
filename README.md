@@ -13,7 +13,16 @@ The program is built around the abstract class 'figuraGeometrica'. The class def
 
 The method 'parse' from the class 'interpreter' is responsible for performing the appropriate function calls. To add more drawing instruction types(geometric forms), it suffices to create a class that inherits 'figuraGeometrica' and to update the 'parse' function accordingly.
 
-## How to use
+## How to run it
+1. Clone the repository. 
+2. Make a .txt file with drawing instructions, such as 
+3. Compile the code using g++ or the makefile
+```sh
+~$ make all 
+~$ ./sculptor
+```
+4. Type in the relative path of the input file.
+5. The resulting .off file will be written inside of 'output/'.
 
 ### Input
 The user draws a figure by providing a .txt file with drawing instructions. Each file must start with the instruction 'dim x y z' where x,y,z are the sculpture dimensions. The following instructions are available:
@@ -26,4 +35,14 @@ The user draws a figure by providing a .txt file with drawing instructions. Each
 7. cutsphere x0 y0 z0 radius
 8. cutellipsoid x0 y0 z0 radius
 
+An instructions file example:
+```
+dim 55 55 55
+putbox 0 19 0 19 0 9 64 224 208 0.9
+putsphere 9 9 22 8 64 224 208 0.9
+putellipsoid 9 9 42 7 3 9 64 224 208 0.9
+cutbox 9 17 9 17 22 30
+cutellipsoid 11 15 9 7 9 4
+cutsphere 10 8 42 5
+```
 Once the drawing is finished, an OFF file is created. One can visualize it by using a program such as MeshLab or geomview. 
