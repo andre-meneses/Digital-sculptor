@@ -8,7 +8,7 @@ int main(void)
     Interpretador parser;
     std::vector<FiguraGeometrica*> figuras;
 
-    figuras = parser.parse("../input/exemplo.txt");
+    figuras = parser.parse("./input/exemplo.txt");
 
     escultura = new Sculptor(parser.getX(), parser.getY(), parser.getZ());
 
@@ -17,7 +17,7 @@ int main(void)
         figuras[i]->draw(*escultura);
     }
 
-    escultura->writeOFF("../output/saida_exemplo.off");
+    escultura->writeOFF("./output/saida_exemplo.off");
 
     for(size_t i = 0; i <figuras.size();i++)
     {

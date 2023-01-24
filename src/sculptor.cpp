@@ -1,4 +1,4 @@
-#include "/home/andre/aulas/prog_avan/prog_oo/unidade2/include/sculptor.hpp"
+#include "../include/sculptor.hpp"
 #include <fstream>
 #include <cstdlib>
 #include <iostream>

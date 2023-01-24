@@ -1,6 +1,6 @@
 #ifndef SCULPTOR_HPP
 #define SCULPTOR_HPP
-#include "/home/andre/aulas/prog_avan/prog_oo/unidade2/include/voxel.hpp"
+#include "./voxel.hpp"
 
 class Sculptor
 {
