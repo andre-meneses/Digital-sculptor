@@ -47,5 +47,5 @@ cutsphere 10 8 42 5
 ```
 Once the drawing is finished, an OFF file is created. One can visualize it by using a program such as MeshLab or geomview. 
 
-The sculpture created by the instructions above looks the following:
-<img src="./figures/sculptor" style="width: 55vw; min-width: 330px;"/>
+The visualizaton of the sculpture created by the instructions above:
+<img src="./figures/sculptor.png" style="width: 55vw; min-width: 330px;"/>
