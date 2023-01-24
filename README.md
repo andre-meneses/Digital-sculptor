@@ -46,3 +46,6 @@ cutellipsoid 11 15 9 7 9 4
 cutsphere 10 8 42 5
 ```
 Once the drawing is finished, an OFF file is created. One can visualize it by using a program such as MeshLab or geomview. 
+
+The sculpture created by the instructions above looks the following:
+<img src="./figures/sculptor" style="width: 55vw; min-width: 330px;"/>
