@@ -1,7 +1,7 @@
 # Digital Sculptor
 
 ## Introduction
-This project was developed as part of an advanced programming class, the goal was to build a program that allows the user to draw three dimensional figures from basic forms such as spheres, boxes and elipses. 
+This project was developed as part of an advanced programming class, the goal was to build a program that allows the user to draw three dimensional figures from basic forms such as spheres, boxes and ellipses. 
 
 ## Implementation  
 
@@ -11,7 +11,7 @@ The figures are drawn from 3d pixels called voxels. Each drawing constitutes a m
 ### Source code organization
 The program is built around the abstract class 'figuraGeometrica'. The class defines a virtual function 'draw' and the attributes 'r,g,b,a'. Each geometric form is a child class of 'figuraGeometrica' that implements its own version of the function 'draw'.
 
-The method 'parse' from the class 'interpreter' is responsible for performing the appropriate function calls. To add more drawing instruction types(geometric forms), it suffices to create a class that inherits 'figuraGeometrica' and to update the 'parse' function accordingly.
+The method 'parse' from the class 'Interpretador' is responsible for performing the appropriate function calls. To add more drawing instructions (geometric forms), it suffices to create a class that inherits 'figuraGeometrica' and to update the 'Interpretador' class accordingly.
 
 ## How to run it
 1. Clone the repository. 
@@ -35,7 +35,7 @@ The user draws a figure by providing a .txt file with drawing instructions. Each
 7. cutsphere x0 y0 z0 radius
 8. cutellipsoid x0 y0 z0 radius
 
-An instructions file example:
+For instance, one could write:
 ```
 dim 55 55 55
 putbox 0 19 0 19 0 9 64 224 208 0.9
